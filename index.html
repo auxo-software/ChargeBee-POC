@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>ChargeBee - POC</title>
+        <script src = "https://js.chargebee.com/v2/chargebee.js"  data-cb-site = "auxo-poc-test" > </script>
         <style>
              @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
             *{
@@ -187,6 +188,26 @@
             font-weight: 500;
             cursor: pointer;
             }
+
+            form .btn a{
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            position: relative;
+            background: none;
+            border: none;
+            color: #fff;
+            padding-left: 110px;
+            padding-top: 15px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            }
+            .spacer{
+                margin-top: 10px;
+            }
         </style>
     </head>
     <body>
@@ -232,7 +253,8 @@
                         </div>
                         <div class="field btn">
                             <div class="btn-layer"></div>
-                            <input type="submit" value="Start Trial">
+                            <div class="spacer"></div>
+                            <a href="javascript:void(0)" data-cb-type="checkout" data-cb-item-0="Workshop-Standard-NZD-Monthly" data-cb-item-0-quantity="1" >Start Trial</a>
                         </div>
                     </form>
                 </div>
